@@ -23,3 +23,14 @@ else{jQuery.post("modal/contact.html",{ajax_name:name,ajax_email:email,ajax_mess
 if(data===""){jQuery("#contact_form")[0].reset();}});}
 return false;});}
 function tokyo_tm_owl_carousel(){"use strict";var carousel=jQuery('.tokyo_tm_testimonials .owl-carousel');carousel.owlCarousel({loop:true,items:2,lazyLoad:false,margin:30,autoplay:true,autoplayTimeout:7000,dots:false,nav:false,navSpeed:false,responsive:{0:{items:1},768:{items:2}}});}
+function redirectToWhatsApp() {
+    // WhatsApp numarasını aşağı yaz
+    var phoneNumber = "+994514179153";
+
+    // Mesaj metni aşağı yaz
+    var message = "Salam, sizinlə əlaqə saxlamaq istəyirəm.";
+
+    var encodedMessage = encodeURIComponent(message);
+    var whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
+
+    window.location.href = whatsappURL;    }
