@@ -25,7 +25,7 @@ return false;});}
 function tokyo_tm_owl_carousel(){"use strict";var carousel=jQuery('.tokyo_tm_testimonials .owl-carousel');carousel.owlCarousel({loop:true,items:2,lazyLoad:false,margin:30,autoplay:true,autoplayTimeout:7000,dots:false,nav:false,navSpeed:false,responsive:{0:{items:1},768:{items:2}}});}
 function redirectToWhatsApp() {
     // WhatsApp numarasını aşağı yaz
-    var phoneNumber = "+994514179153";
+    var phoneNumber = "+994558088878";
 
     // Mesaj metni aşağı yaz
     var message = "Salam, sizinlə əlaqə saxlamaq istəyirəm.";
