@@ -34,3 +34,7 @@ function redirectToWhatsApp() {
     var whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
 
     window.location.href = whatsappURL;    }
+
+
+
+    
