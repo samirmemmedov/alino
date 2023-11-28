@@ -25,23 +25,23 @@
 /* Bağlantıyı stilize et */
 .mail-link {
   display: inline-block;
-  background-color: #000000; /* Arka plan rengini kırmızı yapın */
-  color: white; /* Yazı rengini beyaz yapın */
-  padding: 20px 20px; /* Dolgu ekleyin */
-  border-radius: 5px; /* Köşeleri yuvarlayın */
+  background-color: #000000; 
+  color: white; 
+  padding: 20px 20px; 
+  border-radius: 5px; 
   text-decoration: none;
   font-weight: bold;
   font-size: 25px;
 }
 
-/* İkona stil ekleyin */
+/* icon style  */
 .mail-link i {
   font-size: 30px;
   margin-right: 10px;
-  color: rgb(255, 255, 255); /* Simge rengini beyaz yapın */
+  color: rgb(255, 255, 255); 
 }
 
-/* İkona tıklanabilir bir imleç ekleyin */
+/* icon click */
 .mail-link:hover {
   cursor: pointer;
 }
@@ -51,36 +51,36 @@
 
   
 
-/* Açılış ekranı (hoş geldiniz ekranı) stilini ve animasyonunu tanımlayın */
+/* opening screen */
 .opening-screen {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff; /* Açılış ekranı arka plan rengini ayarlayın */
+  background-color: #fff; 
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Diğer öğelerin önünde olması için yüksek bir z-index değeri kullanın */
-  opacity: 1; /* Başlangıçta tamamen görünür */
-  transition: opacity 1s ease-in-out; /* Geçiş efekti tanımlayın */
+  z-index: 9999; 
+  opacity: 1; 
+  transition: opacity 1s ease-in-out; 
 }
 
 .opening-screen img {
-  max-width: 30%; /* GIF'in ekranın içine sığmasını sağlayın */
+  max-width: 30%; 
   height: auto;
 }
 
-/* Fade-Out (solma) animasyonunu tanımlayın */
+/* Fade-Out ( */
 .fadeOut {
-  opacity: 0; /* Sonunda tamamen görünmez */
+  opacity: 0; 
 }
 
-/* iPhone 12 Pro ekranı için özel stil tanımı */
+/* iPhone 12 Pro screen  */
 @media only screen and (max-width: 1170px) {
   .opening-screen img {
-    max-width: 80%; /* Görüntünün genişliğini ayarlayın */
+    max-width: 80%; 
     height: auto;
   }
 }
