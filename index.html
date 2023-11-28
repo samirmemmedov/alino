@@ -27,7 +27,7 @@
 <body>
 
 
-     <!-- Açılış ekranı (hoş geldiniz ekranı) -->
+     <!-- Startup screen -->
      <div class="opening-screen" id="opening-screen">
       <img src="/img/anima.gif" alt="Hoş Geldiniz Animasyonu">
   </div>
@@ -663,14 +663,14 @@
 
 
 <script>
-  // Sayfanın yüklenmesi tamamlandığında açılış ekranını gizle
+  // Hide the splash screen when the page is finished loading
   window.addEventListener('load', function() {
       const openingScreen = document.getElementById('opening-screen');
       
-      // 3 saniye (3000 milisaniye) sonra açılış ekranını gizle
+      // Hide splash screen after 3 seconds (3000 milliseconds)
       setTimeout(function() {
           openingScreen.style.opacity = '0';
-          openingScreen.style.pointerEvents = 'none'; // Tıklamayı engelle
+          openingScreen.style.pointerEvents = 'none'; // Block click
       }, 3000);
   });
 </script>
